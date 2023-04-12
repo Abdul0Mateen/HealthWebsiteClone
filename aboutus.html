@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ----JQuery--- -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".navBar-container-02").hide();
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 80) {
+            $(".navBar-container-01").hide();
+            $(".navBar-container-02").show();
+          } else {
+            $(".navBar-container-01").show();
+            $(".navBar-container-02").hide();
+          }
+        });
+      });
+    </script>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Plus Jakarta Sans"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="aboutus.css" />
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <title>About Us</title>
+  </head>
+  <body>
+    <div class="container-fluid aboutContainer">
+      <!-- ------------------------------------navbar--------------------------------------------- -->
+      <!-- ----------------------------------- navbar 01----------------------------- -->
+      <div class="container-fluid navBar-container-01">
+        <nav class="navbar navbar-expand-lg px-5">
+          <div class="row">
+            <div class="navbar-head col-12">
+              <a href="healthWebsite.html"><h1 class="brand">health</h1></a>
+              <div class="navbar-newsletter">
+                <h1>Newsletter</h1>
+                <div class="navbar-search">
+                  <img src="./assets/search.svg" alt="icon" width="15rem" />
+                </div>
+              </div>
+            </div>
+            <div class="col-12 px-0">
+              <ul class="navbar-nav">
+                <li class="nav-item active pl-0">
+                  <a href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                  <a href="news.html ">Conditions A-Z</a>
+                </li>
+                <li class="nav-item">
+                  <a href="nutrition.html">Nutritions</a>
+                </li>
+                <li class="nav-item"><a href="news.html ">Wellness</a></li>
+                <li class="nav-item"><a href="news.html ">What to buy</a></li>
+                <li class="nav-item"><a href="aboutus.html ">About Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- ----------------------------------- navbar 02----------------------------- -->
+      <div class="container-fluid navBar-container-02">
+        <nav class="navbar navbar-expand-lg px-5">
+          <div class="row align-items-center">
+            <div class="navbar-head col-lg-3">
+              <a href="healthWebsite.html"><h1 class="brand">health</h1></a>
+            </div>
+            <div class="col-lg-8">
+              <ul class="navbar-nav d-flex justify-content-between">
+                <li class="nav-item active pl-0">
+                  <a href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                  <a href="news.html ">Conditions A-Z</a>
+                </li>
+                <li class="nav-item">
+                  <a href="nutrition.html">Nutritions</a>
+                </li>
+                <li class="nav-item"><a href="news.html ">Wellness</a></li>
+                <li class="nav-item"><a href="news.html ">What to buy</a></li>
+                <li class="nav-item"><a href="aboutus.html ">About Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-head col-lg-1">
+              <div class="navbar-newsletter">
+                <h1>Newsletter</h1>
+                <div class="navbar-search">
+                  <img src="./assets/search.svg" alt="icon" width="15rem" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="subContainer">
+        <h1 class="aboutTitle">About Us</h1>
+        <div class="aboutSummary">
+          <h1>IN THIS ARTICLE</h1>
+          <ul class="row">
+            <li class="col-lg-6 my-2">Our Medical Expert Board</li>
+            <li class="col-lg-6 my-2">
+              Our Commitment to Diversity, Equity, and Inclusion
+            </li>
+            <li class="col-lg-6 my-2">Our Editorial Process</li>
+            <li class="col-lg-6 my-2">Meet Our Team</li>
+            <li class="col-lg-6 my-2">Awards</li>
+            <li class="col-lg-6 my-2">Nominations and Recognition</li>
+            <li class="col-lg-6 my-2">We Are a Dotdash Meredith Brand</li>
+            <li class="col-lg-6 my-2">Our Policies</li>
+            <li class="col-lg-6 my-2">Contact Us</li>
+          </ul>
+        </div>
+        <p class="healthIntro">
+          <i> Health</i> was founded in 1981 as a publication focusing on a
+          healthy lifestyle for women. Since then, <i> Health</i> has expanded
+          to cover health and wellness information for everyone and reaches over
+          120 million people annually.
+        </p>
+        <p class="healthIntro">
+          Our mission is to inform and empower you with accurate, empathetic,
+          and actionable health information so you can make the best choice for
+          your health.
+        </p>
+        <h1 class="boardTitle">Our Medical Expert Board</h1>
+        <p class="boardDet">
+          Our Medical Expert Board is comprised of 70 board-certified physicians
+          and healthcare professionals who work with <i> Health's</i> editorial
+          team to ensure our content is medically accurate, relevant, and
+          up-to-date. These experts medically review content, and provide
+          invaluable insights and perspectives.
+        </p>
+        <p class="boardDet">
+          Our Medical Expert Board includes healthcare professionals that span
+          across multiple specialties. Here are a few of our members:
+        </p>
+        <div class="member">
+          <div class="boardmember">
+            <img src="./assets/member01.webp" alt="Picture" />
+            <div class="memberDetail">
+              <h1>Anju Goel, MD, MPH</h1>
+              <h2>PHYSICIAN, PUBLIC HEALTH CONSULTANT</h2>
+              <p>
+                Anju Goel, MD, MPH, is a public health consultant and internist
+                with over 10 years of experience addressing communicable
+                disease, health policy, health promotion, and disaster
+                preparedness within the California public health system.
+              </p>
+            </div>
+          </div>
+          <h1 class="moreInfo">Read more</h1>
+        </div>
+        <div class="member">
+          <div class="boardmember">
+            <img src="./assets/member02.webp" alt="Picture" />
+            <div class="memberDetail">
+              <h1>Isabel Casimiro, MD</h1>
+              <h2>ENDOCRINOLOGIST</h2>
+              <p>
+                Isabel Casimiro, MD, PhD, is an endocrinologist and instructor
+                at the University of Chicago. Her special interests include
+                diabetes, lipid disorders, obesity, and transgender medicine.
+              </p>
+            </div>
+          </div>
+          <h1 class="moreInfo">Read more</h1>
+        </div>
+        <div class="member">
+          <div class="boardmember">
+            <img src="./assets/member03.webp" alt="Picture" />
+            <div class="memberDetail">
+              <h1>Kashif J. Piracha, MD</h1>
+              <h2>INTERNIST, HOSPITAL MEDICINE, NEPHROLOGY</h2>
+              <p>
+                Kashif J. Piracha, MD, FACP, FASN, FNKF, is a practicing
+                physician at Methodist Willowbrook Hospital.
+              </p>
+            </div>
+          </div>
+          <h1 class="moreInfo">Read more</h1>
+        </div>
+        <div class="member">
+          <div class="boardmember">
+            <img src="./assets/member04.webp" alt="Picture" />
+            <div class="memberDetail">
+              <h1>Ronald Lubelchek, MD</h1>
+              <h2>INFECTIOUS DISEASES PHYSICIAN</h2>
+              <p>
+                Ronald Lubelchek, MD, is an infectious disease specialist in
+                Chicago, Illinois.
+              </p>
+            </div>
+          </div>
+          <h1 class="moreInfo">Read more</h1>
+        </div>
+        <h1 class="healthMission">
+          Our Commitment to Diversity, Equity, and Inclusion
+        </h1>
+        <p class="missionDesc">
+          <i>Health’s</i> mission is to bring fact-based health and wellness
+          information to all people regardless of race, gender identity, sexual
+          orientation, age, religion, culture, body type, and ability. We create
+          content that reflects the variety of backgrounds and experiences of
+          our audience, especially when it comes to groups that have
+          historically been marginalized in the health space. We believe that
+          the diversity of our writers, editors, medical experts, producers, and
+          photographers makes our coverage more accessible and empathetic.
+        </p>
+        <h1 class="racismInfo">Read our Anti-Racism Pledge</h1>
+        <h1 class="processHead">Our Editorial Process</h1>
+        <p class="processDet">
+          Our editorial process is built to help you digest and easily
+          understand health information. Our writers and editors are experienced
+          journalists who are unpacking research studies, data, and medical
+          jargon to ensure this information is clear, accurate, empathetic, and
+          actionable to help you make the right health decisions.
+        </p>
+        <p class="processDet">
+          Our editorial team oversees the creation and development of all our
+          content and brings you breaking health news and everlasting health
+          topics that you’re searching for. We prioritize the integrity of our
+          content and are not influenced by sponsors.
+        </p>
+        <h1 class="processInfo">Read more about our Editorial Process</h1>
+        <h1 class="teamHead">Meet Our Team</h1>
+        <p class="teamIntro">
+          Our team is composed of passionate editors, designers, developers,
+          marketers, SEO experts, and others who are committed to bringing you
+          trusted, empathetic health information.
+        </p>
+        <h1>Meet some of our leaders on the Health team:</h1>
+        <div class="member">
+          <div class="boardmember">
+            <img src="./assets/team01.webp" alt="Picture" />
+            <div class="memberDetail">
+              <h1>Sara Michael</h1>
+              <h2>GROUP GENERAL MANAGER AND SENIOR VICE PRESIDENT, HEALTH</h2>
+              <p>
+                Sara joined Dotdash Meredith in 2019 and is the Group General
+                Manager and Senior Vice President of Health. Before entering
+                this role, she led programs to ensure content accuracy and
+                quality at Healthline Media.
+              </p>
+            </div>
+          </div>
+          <h1 class="moreInfo">Read more</h1>
+        </div>
+        <div class="member">
+          <div class="boardmember">
+            <img src="./assets/team02.webp" alt="Picture" />
+            <div class="memberDetail">
+              <h1>Katrina Chernoff</h1>
+              <h2>GENERAL MANAGER, HEALTH.COM</h2>
+              <p>
+                Katrina joined Dotdash Meredith in 2022 as the General Manager
+                of Health.com. She previously led content operations, content
+                quality, and editorial efficiencies at Healthline Media.
+              </p>
+            </div>
+          </div>
+          <h1 class="moreInfo">Read more</h1>
+        </div>
+        <div class="member">
+          <div class="boardmember">
+            <img src="./assets/team03.webp" alt="Picture" />
+            <div class="memberDetail">
+              <h1>Jordan Davidson</h1>
+              <h2>EDITORIAL DIRECTOR, HEALTH.COM</h2>
+              <p>
+                Jordan joined Dotdash Meredith in 2022 as the Editorial Director
+                of Health.com. She previously held editorial positions at
+                several leading consumer health and wellness brands.
+              </p>
+            </div>
+          </div>
+          <h1 class="moreInfo">Read more</h1>
+        </div>
+        <div class="member">
+          <div class="boardmember">
+            <img src="./assets/team04.webp" alt="Picture" />
+            <div class="memberDetail">
+              <h1>Amber Brenza, CPT</h1>
+              <h2>ASSOCIATE DIRECTOR, HEALTH.COM NEWS</h2>
+              <p>
+                Amber joined Dotdash Meredith in 2019 and is the Associate
+                Director of Health.com News. She previously held editorial
+                positions at several leading consumer health and wellness
+                brands.
+              </p>
+            </div>
+          </div>
+          <h1 class="moreInfo">Read more</h1>
+        </div>
+        <h1>Awards</h1>
+        <div class="policies">
+          <h1 class="policiesHead">Our Policies</h1>
+          <div class="policiesDet">
+            <h1>Terms of Use</h1>
+            <p>
+              Health and its affiliated sites (collectively, the “Site”) are
+              Dotdash Meredith brands, owned and operated by About, Inc. and its
+              affiliates ("Health.” the "Company,” "we,” or "us"). Access to and
+              use of the Site is subject to terms and conditions of use (“Terms
+              of Use”).
+            </p>
+            <h2>Read Our Terms of Use</h2>
+          </div>
+          <div class="policiesDet">
+            <h1>Privacy Policy</h1>
+            <p>
+              We take online privacy seriously and we respect the concerns of
+              our community of users. We may collect information, including
+              personal data, directly from you if you choose to provide that
+              information. When you access the Site, we and our third-party
+              partners may automatically collect certain information about your
+              visit using tools such as cookies, web beacons, and other similar
+              technologies. We may use the information gathered on Health for
+              various purposes, including responding to an email inquiry, and to
+              serve advertising content and offers to you based on your
+              interests and online activities.
+            </p>
+            <h2>Read Our Privacy Policy</h2>
+          </div>
+          <div class="policiesDet">
+            <h1>Advertising Policy</h1>
+            <p>
+              Health accepts advertising on all of its sites but maintains a
+              strict and clear separation between advertising and editorial
+              content. We pay special attention to featuring advertising in a
+              way that will not interfere with your reading experience.
+            </p>
+            <h2>Read Our Advertising Policy</h2>
+          </div>
+          <div class="policiesDet">
+            <h1>Contact Us</h1>
+            <p>
+              We want to hear from you. If you have a comment, suggestion, or
+              correction to share, please contact us at contact@health.com.
+            </p>
+            <p>For press inquiries, email us at press@health.com.</p>
+            <p>Our physical address:</p>
+            <p>
+              Dotdash Meredith, Inc.<br />
+              Attn: Health<br />
+              225 Liberty St<br />
+              New York, NY 10281<br />
+              212-204-4000
+            </p>
+          </div>
+          <div class="policiesDet">
+            <h1>Write for Us</h1>
+            <p>
+              We are continuously looking for qualified medical and health
+              writers. If interested, reach out to us at contact@health.com.
+            </p>
+          </div>
+          <div class="policiesDet">
+            <h1>Join Us</h1>
+            <p>
+              Join our team! We’re looking for bright, engaged, creative, and
+              inspiring people who want to make a difference in the world of
+              health and wellness information.
+            </p>
+            <h2>View Job Openings</h2>
+          </div>
+          <div class="policiesDet">
+            <h1>Advertise With Us</h1>
+            <p>
+              <i>Health </i>offers the highest value to advertisers through a
+              combination of scale, credibility, and intent. Interested in
+              advertising with us? Email us at contact@health.com.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ------------------------Footer------------------------------ -->
+      <div class="container-fluid">
+        <div class="footer row">
+          <div class="contact col-md-6">
+            <div class="contactDet">
+              <h1 class="brand">health</h1>
+              <input class="newsBtn" value="NEWSLETTERS" />
+              <div class="footerIcons">
+                <div class="navIcon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="navIcon">
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="navIcon">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div class="navIcon">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="navIcon">
+                  <i class="fa-brands fa-pinterest-p"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footerlinks col-md-6">
+            <div class="links">
+              <ul class="linksHead1">
+                <li>News</li>
+                <li>Conditions A-Z</li>
+                <li>Nutrition</li>
+                <li>Wellness</li>
+              </ul>
+              <ul class="row linksHead2">
+                <li class="col-sm-6">About Us</li>
+                <li class="col-sm-6">Editorial Process</li>
+                <li class="col-sm-6">Privacy Policy</li>
+                <li class="col-sm-6">Terms of Use</li>
+                <li class="col-sm-6">Advertise</li>
+                <li class="col-sm-6">Medical Expert Board</li>
+                <li class="col-sm-6">Anti-Racism Pledge</li>
+                <li class="col-sm-6">Product Vetting</li>
+                <li class="col-sm-6">Careers</li>
+                <li class="col-sm-6">Contact</li>
+              </ul>
+            </div>
+          </div>
+          <div class="note col-12">
+            <p class="noteDet">
+              <i>Health's</i> content is for informational and educational
+              purposes only. Our website is not intended to be a substitute for
+              professional medical advice, diagnosis, or treatment.
+            </p>
+          </div>
+          <div class="copyright col-12">
+            <p class="copyrightDet">
+              Health is part of the Dotdash Meredith publishing family.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

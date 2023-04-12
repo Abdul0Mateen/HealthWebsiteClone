@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ----JQuery--- -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".navBar-container-02").hide();
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 80) {
+            $(".navBar-container-01").hide();
+            $(".navBar-container-02").show();
+          } else {
+            $(".navBar-container-01").show();
+            $(".navBar-container-02").hide();
+          }
+        });
+      });
+    </script>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Plus Jakarta Sans"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="nutrition.css" />
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <title>Nutrition</title>
+  </head>
+  <body>
+    <div class="container-fluid mainContainer">
+      <!-- ------------------------------------navbar--------------------------------------------- -->
+      <!-- ----------------------------------- navbar 01----------------------------- -->
+      <div class="container-fluid navBar-container-01">
+        <nav class="navbar navbar-expand-lg px-5">
+          <div class="row">
+            <div class="navbar-head col-12">
+              <a href="healthWebsite.html"><h1 class="brand">health</h1></a>
+              <div class="navbar-newsletter">
+                <h1>Newsletter</h1>
+                <div class="navbar-search">
+                  <img src="./assets/search.svg" alt="icon" width="15rem" />
+                </div>
+              </div>
+            </div>
+            <div class="col-12 px-0">
+              <ul class="navbar-nav">
+                <li class="nav-item active pl-0">
+                  <a href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                  <a href="news.html ">Conditions A-Z</a>
+                </li>
+                <li class="nav-item">
+                  <a href="nutrition.html">Nutritions</a>
+                </li>
+                <li class="nav-item"><a href="news.html ">Wellness</a></li>
+                <li class="nav-item"><a href="news.html ">What to buy</a></li>
+                <li class="nav-item"><a href="aboutus.html ">About Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- ----------------------------------- navbar 02----------------------------- -->
+      <div class="container-fluid navBar-container-02">
+        <nav class="navbar navbar-expand-lg px-5">
+          <div class="row align-items-center">
+            <div class="navbar-head col-lg-3">
+              <a href="healthWebsite.html"><h1 class="brand">health</h1></a>
+            </div>
+            <div class="col-lg-8">
+              <ul class="navbar-nav d-flex justify-content-between">
+                <li class="nav-item active pl-0">
+                  <a href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                  <a href="news.html ">Conditions A-Z</a>
+                </li>
+                <li class="nav-item">
+                  <a href="nutrition.html">Nutritions</a>
+                </li>
+                <li class="nav-item"><a href="news.html ">Wellness</a></li>
+                <li class="nav-item"><a href="news.html ">What to buy</a></li>
+                <li class="nav-item"><a href="aboutus.html ">About Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-head col-lg-1">
+              <div class="navbar-newsletter">
+                <h1>Newsletter</h1>
+                <div class="navbar-search">
+                  <img src="./assets/search.svg" alt="icon" width="15rem" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- ------------------------------Nutrition Body------------------------------ -->
+      <div class="container-fluid nutritionContainer">
+        <div class="nutritionHead">
+          <h1>Nutrition</h1>
+          <p>
+            Food shouldn't just taste good—it should give your body the
+            nutrients it needs to fuel you through the day. Learn more about
+            different food groups and the health benefits they offer, as well as
+            how to work these nutrient-packed foods into your diet.
+          </p>
+          <div class="nurtitionLinks">
+            <ul>
+              <li>EAT WELL</li>
+              <li>NUTRITION BASICS</li>
+              <li>VITAMINS AND SUPPLEMENTS</li>
+            </ul>
+          </div>
+          <div class="contactIcons">
+            <i class="fa-brands fa-pinterest-p"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+      <!-- ----------------------------Tips------------------------------ -->
+      <div class="container-fluid tipsContainer">
+        <h1 class="tipsHead">Tips For Eating Well</h1>
+        <div class="tipsCards">
+          <div class="tipsList">
+            <img src="./assets/tips01.webp" alt="Picture" />
+            <div>EAT WELL</div>
+            <h1>Best and Worst Foods for Bloating</h1>
+            <p>Medically reviewed by Roxana Ehsani, MS</p>
+          </div>
+          <div class="tipsSubList">
+            <div class="subListCard">
+              <div class="subListDet">
+                <div>EAT WELL</div>
+                <h1>Best and Worst Foods for Bloating</h1>
+                <p>11 Foods for Thyroid Health—And 3 To Avoid</p>
+              </div>
+              <img
+                src=" ./assets/eatwell05.webp"
+                alt="Picture"
+                width="170rem"
+              />
+            </div>
+            <div class="subListCard">
+              <div class="subListDet">
+                <div>EAT WELL</div>
+                <h1>Weight Loss Meal Substitutions That Taste Amazing</h1>
+                <p>Medically reviewed by Roxana Ehsani, MS</p>
+              </div>
+              <img
+                src=" ./assets/eatwell06.webp"
+                alt="Picture"
+                width="170rem"
+              />
+            </div>
+            <div class="subListCard">
+              <div class="subListDet">
+                <div>EAT WELL</div>
+                <h1>
+                  Mediterranean Diet Food List: How To Follow The Popular Meal
+                  Plan
+                </h1>
+                <p>Medically reviewed by Roxana Ehsani, MS</p>
+              </div>
+              <img
+                src=" ./assets/eatwell07.webp"
+                alt="Picture"
+                width="170rem"
+              />
+            </div>
+            <div class="subListCard">
+              <div class="subListDet">
+                <div>EAT WELL</div>
+                <h1>7 Side Effects of Going Keto</h1>
+                <p>Medically reviewed by Roxana Ehsani, MS</p>
+              </div>
+              <img
+                src=" ./assets/eatwell08.webp"
+                alt="Picture"
+                width="170rem"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -----------------------------------Supplements---------------------------------- -->
+      <div class="container-fluid supContainer">
+        <h1 class="subHead">Best of Vitamins and Supplements</h1>
+        <div class="supCards">
+          <div class="supList">
+            <img src="./assets/supliments01.webp" alt="Picture" />
+            <div>NUTRITIONAL SUPPLEMENTS</div>
+            <h1>The 12 Best Collagen Supplements, According to Experts</h1>
+            <p>By Rebecca</p>
+          </div>
+          <div class="supList">
+            <img src="./assets/supliments02.webp" alt="Picture" />
+            <div>NUTRITION</div>
+            <h1>What To Know About Zinc Supplements</h1>
+            <p>By Rebecca</p>
+          </div>
+          <div class="supList">
+            <img src="./assets/supliments03.webp" alt="Picture" />
+            <div>NUTRITIONAL SUPPLEMENTS</div>
+            <h1>The 14 Best Vegan Protein Powders</h1>
+            <p>By Rebecca</p>
+          </div>
+        </div>
+      </div>
+      <!-- ----------------------------Other Nurtition---------------------------------- -->
+      <div class="container-fluid otherContainer">
+        <div class="otherList">
+          <h1 class="otherHead">See Other Nutrition</h1>
+          <div class="otherCard">
+            <div class="otherDet">
+              <div>EAT WELL</div>
+              <h1>Best and Worst Foods for Bloating</h1>
+              <p>11 Foods for Thyroid Health—And 3 To Avoid</p>
+            </div>
+            <img src=" ./assets/eatwell05.webp" alt="Picture" width="170rem" />
+          </div>
+          <div class="otherCard">
+            <div class="otherDet">
+              <div>EAT WELL</div>
+              <h1>Weight Loss Meal Substitutions That Taste Amazing</h1>
+              <p>Medically reviewed by Roxana Ehsani, MS</p>
+            </div>
+            <img src=" ./assets/eatwell06.webp" alt="Picture" width="170rem" />
+          </div>
+          <div class="otherCard">
+            <div class="otherDet">
+              <div>EAT WELL</div>
+              <h1>
+                Mediterranean Diet Food List: How To Follow The Popular Meal
+                Plan
+              </h1>
+              <p>Medically reviewed by Roxana Ehsani, MS</p>
+            </div>
+            <img src=" ./assets/eatwell07.webp" alt="Picture" width="170rem" />
+          </div>
+          <div class="otherCard">
+            <div class="otherDet">
+              <div>EAT WELL</div>
+              <h1>7 Side Effects of Going Keto</h1>
+              <p>Medically reviewed by Roxana Ehsani, MS</p>
+            </div>
+            <img src=" ./assets/eatwell08.webp" alt="Picture" width="170rem" />
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------------Explore Nutrition----------------------------------- -->
+      <div class="container-fluid expContainer">
+        <h1 class="expHead">Explore Nutrition</h1>
+        <div class="expCards">
+          <div class="expList">
+            <img src="./assets/explore01.webp" alt="Picture" />
+            <div>NEWS</div>
+            <h1>
+              Medicaid Testing 'Food as Medicine' Program in Some States—How
+              Could It Impact Health?
+            </h1>
+            <p>By Rebecca</p>
+          </div>
+          <div class="expList">
+            <img src="./assets/explore02.webp" alt="Picture" />
+            <div>WELNESS</div>
+            <h1>Health Benefits of Quercetin</h1>
+            <p>By Rebecca</p>
+          </div>
+          <div class="expList">
+            <img src="./assets/explore03.webp" alt="Picture" />
+            <div>NEWS</div>
+            <h1>
+              What Makes a Food 'Healthy'? Here's How the FDA Wants to Change
+              the Definition
+            </h1>
+            <p>By Rebecca</p>
+          </div>
+        </div>
+      </div>
+      <!-- ------------------------------------Nutritions Cards--------------------------------- -->
+      <div class="container-fluid ncContainer">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 my-3">
+            <div class="ncCard">
+              <img src="./assets/nc01.webp" alt="Picture" />
+              <div>EAT WELL</div>
+              <h1>The 26 Best Low-Carb, Keto-Friendly Beers</h1>
+              <p>By Rebecca</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 my-3">
+            <div class="ncCard">
+              <img src="./assets/nc02.webp" alt="Picture" />
+              <div>NUTRITION</div>
+              <h1>
+                What Is the Climatarian Diet? This Eco-Friendly Way of Eating,
+                Explained
+              </h1>
+              <p>By Rebecca</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 my-3">
+            <div class="ncCard">
+              <img src="./assets/nc03.webp" alt="Picture" />
+              <div>EAT WELL</div>
+              <h1>Here's What To Know About the ProLon Diet</h1>
+              <p>By Rebecca</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 my-3">
+            <div class="ncCard">
+              <img src="./assets/nc04.webp" alt="Picture" />
+              <div>NUTRITION</div>
+              <h1>9 Health Benefits of Asparagus</h1>
+              <p>By Rebecca</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 my-3">
+            <div class="ncCard">
+              <img src="./assets/nc05.webp" alt="Picture" />
+              <div>NUTRITION</div>
+              <h1>Health Benefits of Liquid Chlorophyll</h1>
+              <p>By Rebecca</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 my-3">
+            <div class="ncCard">
+              <img src="./assets/nc06.webp" alt="Picture" />
+              <div>NUTRITION</div>
+              <h1>Health Benefits of Liquid Chlorophyll</h1>
+              <p>By Rebecca</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 my-3">
+            <div class="ncCard">
+              <img src="./assets/nc07.webp" alt="Picture" />
+              <div>NUTRITION</div>
+              <h1>Health Benefits of Liquid Chlorophyll</h1>
+              <p>By Rebecca</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 my-3">
+            <div class="ncCard">
+              <img src="./assets/nc08.webp" alt="Picture" />
+              <div>NUTRITION</div>
+              <h1>Health Benefits of Liquid Chlorophyll</h1>
+              <p>By Rebecca</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -------------------------Footer--------------------- -->
+      <div class="container-fluid">
+        <div class="footer row">
+          <div class="contact col-md-6">
+            <div class="contactDet">
+              <h1 class="brand">health</h1>
+              <input class="newsBtn" value="NEWSLETTERS" />
+              <div class="footerIcons">
+                <div class="navIcon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="navIcon">
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="navIcon">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div class="navIcon">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="navIcon">
+                  <i class="fa-brands fa-pinterest-p"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footerlinks col-md-6">
+            <div class="links">
+              <ul class="linksHead1">
+                <li>News</li>
+                <li>Conditions A-Z</li>
+                <li>Nutrition</li>
+                <li>Wellness</li>
+              </ul>
+              <ul class="row linksHead2">
+                <li class="col-sm-6">About Us</li>
+                <li class="col-sm-6">Editorial Process</li>
+                <li class="col-sm-6">Privacy Policy</li>
+                <li class="col-sm-6">Terms of Use</li>
+                <li class="col-sm-6">Advertise</li>
+                <li class="col-sm-6">Medical Expert Board</li>
+                <li class="col-sm-6">Anti-Racism Pledge</li>
+                <li class="col-sm-6">Product Vetting</li>
+                <li class="col-sm-6">Careers</li>
+                <li class="col-sm-6">Contact</li>
+              </ul>
+            </div>
+          </div>
+          <div class="note col-12">
+            <p class="noteDet">
+              <i>Health's</i> content is for informational and educational
+              purposes only. Our website is not intended to be a substitute for
+              professional medical advice, diagnosis, or treatment.
+            </p>
+          </div>
+          <div class="copyright col-12">
+            <p class="copyrightDet">
+              Health is part of the Dotdash Meredith publishing family.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

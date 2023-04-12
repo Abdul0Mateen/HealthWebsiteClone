@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- ----JQuery--- -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".navBar-container-02").hide();
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 80) {
+            // $(".navbar-head").css({ order: "1" });
+            // $(".navbar-newsletter").css({ order: "3" });
+            // $(".navbarTabs").css({ col: "7", order: "2" });
+            $(".navBar-container-01").hide();
+            $(".navBar-container-02").show();
+          } else {
+            // $(".navbar-head").css({ col: "3", order: "1" });
+            // $(".navbar-newsletter").css({ col: "7", order: "2" });
+            // $(".navbarTabs").css({ col: "2", order: "3" });
+            $(".navBar-container-01").show();
+            $(".navBar-container-02").hide();
+          }
+        });
+      });
+    </script>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Plus Jakarta Sans"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="healthWebsite.css" />
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <title>
+      Health: Trusted and Empathetic Health and Wellness Information
+    </title>
+  </head>
+  <body>
+    <div class="container-fluid mainContainer">
+      <!-- ------------------------------------navbar--------------------------------------------- -->
+      <!-- ----------------------------------- navbar 01----------------------------- -->
+      <div class="container-fluid navBar-container-01">
+        <nav class="navbar navbar-expand-lg px-5">
+          <div class="row justify-content-between">
+            <div class="navbar-head col-3 order-1">
+              <a href="healthWebsite.html"><h1 class="brand">health</h1></a>
+            </div>
+            <div class="navbar-newsletter col-2 order-2">
+              <h1>Newsletter</h1>
+              <div class="navbar-search">
+                <img src="./assets/search.svg" alt="icon" width="15rem" />
+              </div>
+            </div>
+            <div class="navbarTabs col-12 px-0 order-3">
+              <ul class="navbar-nav">
+                <li class="nav-item active pl-0">
+                  <a href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                  <a href="news.html">Conditions A-Z</a>
+                </li>
+                <li class="nav-item">
+                  <a href="nutrition.html">Nutritions</a>
+                </li>
+                <li class="nav-item">
+                  <a href="news.html">Wellness</a>
+                </li>
+                <li class="nav-item">
+                  <a href="news.html">What to buy</a>
+                </li>
+                <li class="nav-item">
+                  <a href="aboutus.html ">About Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- ----------------------------------- navbar 02----------------------------- -->
+      <div class="container-fluid navBar-container-02">
+        <nav class="navbar navbar-expand-lg px-5">
+          <div class="row align-items-center">
+            <div class="navbar-head col-lg-3">
+              <h1 class="brand">health</h1>
+            </div>
+            <div class="col-lg-8">
+              <ul class="navbar-nav d-flex justify-content-between">
+                <li class="nav-item active pl-0">
+                  <a href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                  <a href="news.html ">Conditions A-Z</a>
+                </li>
+                <li class="nav-item">
+                  <a href="nutrition.html">Nutritions</a>
+                </li>
+                <li class="nav-item"><a href="news.html ">Wellness</a></li>
+                <li class="nav-item"><a href="news.html ">What to buy</a></li>
+                <li class="nav-item"><a href="aboutus.html ">About Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-head col-lg-1">
+              <div class="navbar-newsletter">
+                <h1>Newsletter</h1>
+                <div class="navbar-search">
+                  <img src="./assets/search.svg" alt="icon" width="15rem" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- ------------------------------------News--------------------------------------------- -->
+      <div class="container-fluid newsContainer">
+        <div class="row newsRows">
+          <div class="mainStats col-12">
+            <div class="stats">
+              <h1>40+</h1>
+              <p>Years Health Expertise</p>
+            </div>
+            <div class="stats midStats">
+              <h1>120M</h1>
+              <p>People Reached Annually</p>
+            </div>
+            <div class="stats">
+              <h1>100+</h1>
+              <p>Medical Experts</p>
+            </div>
+          </div>
+          <div class="col-lg-5 my-4">
+            <div class="headlineNews">
+              <img src="./assets/newImage.webp" class="newsImage" alt="news" />
+              <div>News</div>
+              <h1>
+                Before You Buy Magnesium Supplements From TikTok, Here’s What
+                You Need to Know
+              </h1>
+              <p>By Julia Landwehr</p>
+            </div>
+          </div>
+          <div class="latest-news col-lg-4 col-md-7 my-4">
+            <div class="latestNewsHead"><h1>LATEST HEALTH NEWS</h1></div>
+            <div class="newsList">
+              <div class="newsTabs">
+                <p>
+                  People Who Regularly Use Laxatives May Have an Increased Risk
+                  of Dementia, Study Shows
+                </p>
+                <div class="newsDet">
+                  <div class="newsTime">10 hours ago</div>
+                  <div class="newsAuthor">By Jocelyne Sills</div>
+                </div>
+              </div>
+              <div class="newsTabs">
+                <p>
+                  Erythritol, a Zero-Calorie Sweetener, Linked to Increased Risk
+                  of Heart Attack and Stroke
+                </p>
+                <div class="newsDet">
+                  <div class="newsTime">11 hours ago</div>
+                  <div class="newsAuthor">By Saraha</div>
+                </div>
+              </div>
+              <div class="newsTabs">
+                <p>
+                  Nearly 50% of Women Skip Preventative Health Appointments—Here
+                  Are the Checkups to Prioritize
+                </p>
+                <div class="newsDet">
+                  <div class="newsTime">12 hours ago</div>
+                  <div class="newsAuthor">By Julia</div>
+                </div>
+              </div>
+              <div class="newsTabs">
+                <p>
+                  TikTok Announces Daily Time Limit for Teens, But Is It Enough?
+                </p>
+                <div class="newsDet">
+                  <div class="newsTime">1 hours ago</div>
+                  <div class="newsAuthor">By Julia</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="trendingTopics col-lg-3 col-md-5 my-4">
+            <div class="topics">
+              <div class="advertise">
+                <img src="./assets/ad-profile.PNG" />
+
+                <h1>What I Wish I Knew About Multiple Sclerosis</h1>
+              </div>
+              <div class="trend">
+                <h1>Trending Health Topics</h1>
+                <p>Healthy Blood Pressure</p>
+                <p>Anti-Aging Creams</p>
+                <p>Is Popcorn Healthy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -----------------------Explore Conditions---------------------------- -->
+      <div class="container-fluid exploreContainer">
+        <div class="row">
+          <div class="col-12">
+            <div class="conditionsHead">
+              <div class="conditionTitle">
+                <img
+                  src="./assets/condition.webp"
+                  alt="Picture"
+                  width="80rem"
+                />
+                <h1>Explore Conditions</h1>
+              </div>
+              <p>SEE ALL HEALTH CONDITIONS</p>
+            </div>
+          </div>
+          <div class="py-4 col-12">
+            <div class="btnContainer">
+              <div class="conditionsBtn">Alzheimer's</div>
+              <div class="conditionsBtn">Breast Cancer</div>
+              <div class="conditionsBtn">Digestive Disorders</div>
+              <div class="conditionsBtn">Depression</div>
+              <div class="conditionsBtn">Heart Disease</div>
+              <div class="conditionsBtn">Kidney Disease</div>
+              <div class="conditionsBtn">Lung Cancer</div>
+              <div class="conditionsBtn">Psoriasis</div>
+              <div class="conditionsBtn">Rheumatoid Arthritis</div>
+              <div class="conditionsBtn">Kidney Disease</div>
+              <div class="conditionsBtn">Lung Cancer</div>
+              <div class="conditionsBtn">Psoriasis</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="conditionList">
+              <img src="./assets/condition01.webp" alt="Picture" />
+              <div>Multiple Sclerosis</div>
+              <h1>What Causes Multiple Sclerosis?</h1>
+              <p>Medically reviewed by Samita Patel</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="conditionList">
+              <img src="./assets/condition02.webp" alt="Picture" />
+              <div>Multiple Sclerosis</div>
+              <h1>Thyroid Disease Symptoms You Should Be Aware Of</h1>
+              <p>Medically reviewed by Danielli</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="conditionList">
+              <img src="./assets/condition03.webp" alt="Picture" />
+              <div>Multiple Sclerosis</div>
+              <h1>How Alzheimer's Disease Progresses</h1>
+              <p>Medically reviewed by Nicolas/p></p>
+            </div>
+          </div>
+          <div class="col-4"></div>
+          <div class="col-4"></div>
+        </div>
+      </div>
+      <!-- --------------------------Our Team-------------------------------- -->
+      <div class="container-fluid teamContainer">
+        <div class="row">
+          <div class="col-12">
+            <div class="teamHead">
+              <h1>Our team</h1>
+            </div>
+          </div>
+          <div class="my-4 col-lg-4 col-md-6">
+            <div class="teamComments px-3">
+              <p class="commentsHead">
+                Health’s team of medical experts, writers, and editors are
+                committed to ensuring our content is evidence-based, up-to-date,
+                and comprehensive.
+              </p>
+              <p class="comments">
+                It's incredibly rewarding to create content that helps readers
+                learn about nutrition and enjoy healthier lives.
+              </p>
+              <div class="memberDet">
+                <h1>Amber brenza</h1>
+                <p>Associate Editorial doctrate</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="members px-3">
+              <div class="teamDetail my-4">
+                <h1 class="memberDept">Medical Expert Board</h1>
+                <div class="memberContainer">
+                  <div class="memberInfo">
+                    <img src="./assets/renita.webp" alt="Profile" />
+                    <h1>Ranita White,MD</h1>
+                    <h2>OBGYN</h2>
+                  </div>
+                  <div class="memberInfo">
+                    <img src="./assets/kashif.webp" alt="Profile" />
+                    <h1>kashif J. Paracha, MD</h1>
+                    <h2>Internist Hospital Medicine,Nephrology</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="teamDetail my-4">
+                <h1 class="memberDept">Expert Writers</h1>
+                <div class="memberContainer">
+                  <div class="memberInfo">
+                    <img src="./assets/renita.webp" alt="Profile" />
+                    <h1>Ranita White,MD</h1>
+                    <h2>OBGYN</h2>
+                  </div>
+                  <div class="memberInfo">
+                    <img src="./assets/kashif.webp" alt="Profile" />
+                    <h1>kashif J. Paracha, MD</h1>
+                    <h2>Internist Hospital Medicine,Nephrology</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="teamDetail my-4">
+                <h1 class="memberDept">Experienced Editors</h1>
+                <div class="memberContainer">
+                  <div class="memberInfo">
+                    <img src="./assets/renita.webp" alt="Profile" />
+                    <h1>Ranita White,MD</h1>
+                    <h2>OBGYN</h2>
+                  </div>
+                  <div class="memberInfo">
+                    <img src="./assets/kashif.webp" alt="Profile" />
+                    <h1>kashif J. Paracha, MD</h1>
+                    <h2>Internist Hospital Medicine,Nephrology</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12"></div>
+        </div>
+      </div>
+      <!-- -------------------------------Eat Well----------------------------  -->
+      <div class="container-fluid eatContainer">
+        <div class="row">
+          <div class="col-12">
+            <div class="eatHead">
+              <div class="eatTitle">
+                <img
+                  src="./assets/Nutrition.webp"
+                  alt="Picture"
+                  width="80rem"
+                />
+                <h1>Eat Well</h1>
+              </div>
+              <p>SEE ALL NUTRITIONS</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 my-5">
+            <div class="headList">
+              <img src="./assets/eatWell01.webp" alt="Picture" />
+              <div>NUTRITIONS</div>
+              <h1>The Benefits of Fasting for a Healthy Gut</h1>
+              <p>Medically reviewed by Suzanne</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 my-5">
+            <div class="headList">
+              <img src="./assets/eatWell02.webp" alt="Picture" />
+              <div>FOOD, BEVERAGES & MEAL KITS</div>
+              <h1>I Tried Daily Harvest for 2 Weeks—Here's What I Learned</h1>
+              <p>Fact checked by Marley</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 my-5">
+            <div class="headList">
+              <img src="./assets/eatWell03.webp" alt="Picture" />
+              <div>VITAMINS AND SUPPLEMENTS</div>
+              <h1>What To Know About 'Immune-Boosting' Supplements</h1>
+              <p>Medically reviewed by Suzanne</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 my-5">
+            <div class="headList">
+              <img src="./assets/eatWell04.webp" alt="Picture" />
+              <div>NUTRITIONS BASICS</div>
+              <h1>
+                What Are Complex Carbohydrates? — And 28 to Add to Your Diet
+              </h1>
+              <p>Medically reviewed by Suzanne</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ----------------------Move your body----------------------------- -->
+      <div class="container-fluid excerciseContainer">
+        <div class="row">
+          <div class="col-12">
+            <div class="excerciseHead">
+              <div class="excerciseTitle">
+                <img
+                  src="./assets/excercise.webp"
+                  alt="Picture"
+                  width="80rem"
+                />
+                <h1>Move Your Body</h1>
+              </div>
+              <p>SEE ALL FITNESS</p>
+            </div>
+          </div>
+          <div class="col-md-4 my-5">
+            <div class="headList">
+              <img src="./assets/excercise01.webp" alt="Picture" />
+              <div>FITNESS</div>
+              <h1>
+                This 50 Push-up Challenge Will Transform Your Body in 30 Days
+              </h1>
+              <p>Medically reviewed by Ana Maria</p>
+            </div>
+          </div>
+          <div class="col-md-4 my-5">
+            <div class="headList">
+              <img src="./assets/excercise03.webp" alt="Picture" />
+              <div>FITNESS</div>
+              <h1>
+                A woman doing inversion therapy hanging upside down in an
+                inversion table Everything You Need to Know About Inversion
+                Tables
+              </h1>
+              <p>Medically reviewed by Emilly</p>
+            </div>
+          </div>
+          <div class="col-md-4 my-5">
+            <div class="headList">
+              <img src="./assets/excercise02.webp" alt="Picture" />
+              <div>FITNESS</div>
+              <h1>What Is Tai Chi?</h1>
+              <p>Medically reviewed by Qluseun</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ------------------------------------Anxiety-------------------------------- -->
+      <div class="container-fluid anxietyContainer">
+        <div class="row">
+          <div class="col-12">
+            <div class="anxietyHead">
+              <div class="anxietyTitle">
+                <img src="./assets/anxiety.webp" alt="Picture" width="80rem" />
+                <h1>Relieve Anxiety</h1>
+              </div>
+              <p>SEE ALL MENTAL HEALTH</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 my-5">
+            <div class="headList">
+              <img src="./assets/anxiety01.webp" alt="Picture" />
+              <div>THERAPY SUBSCRIPTIONS</div>
+              <h1>Best Online Therapy Services</h1>
+              <p>Medically reviewed by Ana Maria</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 my-5">
+            <div class="headList">
+              <img src="./assets/anxiety02.webp" alt="Picture" />
+              <div>SLEEP</div>
+              <h1>7 Things To Do When You Can't Sleep Because of Anxiety</h1>
+              <p>Medically reviewed by Ana Maria</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 my-5">
+            <div class="headList">
+              <img src="./assets/anxiety03.webp" alt="Picture" />
+              <div>ANXIETY</div>
+              <h1>
+                The Difference Between a Panic Attack and an Anxiety Attack
+              </h1>
+              <p>Medically reviewed by Ana Maria</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 my-5">
+            <div class="headList">
+              <img src="./assets/anxiety04.webp" alt="Picture" />
+              <div>ANXIETY</div>
+              <h1>Why Drinking Coffee Might Be Fueling Your Anxiety</h1>
+              <p>Medically reviewed by Ana Maria</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ------------ ---------Sign Up---------------------------- -->
+      <div class="container-fluid signupContainer">
+        <div class="signUpcontact">
+          <h1>Join our 11.5 million social followers</h1>
+          <div class="contactIcons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-pinterest-p"></i>
+          </div>
+        </div>
+        <div class="signUp">
+          <h1>
+            Get the latest health & wellness news daily right to your inbox.
+          </h1>
+          <div class="signUpEmail">
+            <input
+              type="text"
+              class="inputEmail"
+              placeholder="Enter your email address"
+            />
+            <input type="button" class="inputBtn" value="Sign Up" />
+          </div>
+          <p>View our Privacy Policy</p>
+        </div>
+      </div>
+      <!-- ------------ ---------Recommendation---------------------------- -->
+      <div class="container-fluid recommendContainer d-flex flex-column">
+        <h1>We Recommend</h1>
+        <div class="d-flex cardContainer">
+          <div class="recommendCard">
+            <img src="./assets/recommendation01.webp" alt="" />
+            <h1>Innovative Hospital: UCLA’s Mobile Stroke Unit</h1>
+          </div>
+          <div class="recommendCard">
+            <img src="./assets/recommendation02.webp" alt="" />
+            <h1>Editor’s Picks: Moisturizers for Dry Skin</h1>
+          </div>
+          <div class="recommendCard">
+            <img src="./assets/recommendation03.webp" alt="" />
+            <h1>Editor's Picks: Retinol</h1>
+          </div>
+          <div class="recommendCard">
+            <img src="./assets/recommendation04.webp" alt="" />
+            <h1>Innovative Hospital: Hospital for Special Surgery</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---------------------------Footer-------------------------------- -->
+      <div class="container-fluid">
+        <div class="footer row">
+          <div class="contact col-md-6">
+            <div class="contactDet">
+              <h1 class="brand">health</h1>
+              <input class="newsBtn" value="NEWSLETTERS" />
+              <div class="footerIcons">
+                <div class="navIcon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="navIcon">
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="navIcon">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div class="navIcon">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="navIcon">
+                  <i class="fa-brands fa-pinterest-p"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footerlinks col-md-6">
+            <div class="links">
+              <ul class="linksHead1">
+                <li>News</li>
+                <li>Conditions A-Z</li>
+                <li>Nutrition</li>
+                <li>Wellness</li>
+              </ul>
+              <ul class="row linksHead2">
+                <li class="col-sm-6">About Us</li>
+                <li class="col-sm-6">Editorial Process</li>
+                <li class="col-sm-6">Privacy Policy</li>
+                <li class="col-sm-6">Terms of Use</li>
+                <li class="col-sm-6">Advertise</li>
+                <li class="col-sm-6">Medical Expert Board</li>
+                <li class="col-sm-6">Anti-Racism Pledge</li>
+                <li class="col-sm-6">Product Vetting</li>
+                <li class="col-sm-6">Careers</li>
+                <li class="col-sm-6">Contact</li>
+              </ul>
+            </div>
+          </div>
+          <div class="note col-12">
+            <p class="noteDet">
+              <i>Health's</i> content is for informational and educational
+              purposes only. Our website is not intended to be a substitute for
+              professional medical advice, diagnosis, or treatment.
+            </p>
+          </div>
+          <div class="copyright col-12">
+            <p class="copyrightDet">
+              Health is part of the Dotdash Meredith publishing family.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
