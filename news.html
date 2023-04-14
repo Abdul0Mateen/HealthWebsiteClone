@@ -4,22 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- ----JQuery--- -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".navBar-container-02").hide();
-        $(window).scroll(function () {
-          if ($(this).scrollTop() > 80) {
-            $(".navBar-container-01").hide();
-            $(".navBar-container-02").show();
-          } else {
-            $(".navBar-container-01").show();
-            $(".navBar-container-02").hide();
-          }
-        });
-      });
-    </script>
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -27,93 +11,78 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <!-- Font Family -->
     <link
       href="https://fonts.googleapis.com/css?family=Plus Jakarta Sans"
       rel="stylesheet"
     />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Icon -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="news.css" />
-    <!-- Icon -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
+
     <title>News</title>
   </head>
   <body>
     <div class="container-fluid mainContainer">
       <!-- ------------------------------------navbar--------------------------------------------- -->
-      <!-- ----------------------------------- navbar 01----------------------------- -->
-      <div class="container-fluid navBar-container-01">
-        <nav class="navbar navbar-expand-lg px-5">
-          <div class="row">
-            <div class="navbar-head col-12">
-              <a href="index.html"><h1 class="brand">health</h1></a>
-
-              <div class="navbar-newsletter">
-                <h1>Newsletter</h1>
-                <div class="navbar-search">
-                  <img src="./assets/search.svg" alt="icon" width="15rem" />
-                </div>
-              </div>
-            </div>
-            <div class="col-12 px-0">
-              <ul class="navbar-nav">
-                <li class="nav-item active pl-0">
-                  <a href="news.html">News</a>
-                </li>
-                <li class="nav-item">
-                  <a href="news.html ">Conditions A-Z</a>
-                </li>
-                <li class="nav-item">
-                  <a href="nutrition.html">Nutritions</a>
-                </li>
-                <li class="nav-item"><a href="news.html ">Wellness</a></li>
-                <li class="nav-item"><a href="news.html ">What to buy</a></li>
-                <li class="nav-item"><a href="aboutus.html">About Us</a></li>
-              </ul>
-            </div>
+      <nav class="navbar navbar-expand-lg navBar-container px-5">
+        <a class="navbar-brand" href="index.html"
+          ><h1 class="brand">health</h1></a
+        >
+        <button
+          class="navbar-toggler menuBtn"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon menuIcon">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+        </button>
+        <div
+          class="collapse navbar-collapse navbar-tabs-wrapper"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav navbar-tabs">
+            <li class="nav-item active">
+              <a href="news.html">NEWS</a>
+            </li>
+            <li class="nav-item">
+              <a href="news.html">CONDITIONS A-Z</a>
+            </li>
+            <li class="nav-item">
+              <a href="nutrition.html">NUTRITIONS</a>
+            </li>
+            <li class="nav-item">
+              <a href="news.html">WELLNESS</a>
+            </li>
+            <li class="nav-item">
+              <a href="news.html">WHAT TO BUY</a>
+            </li>
+            <li class="nav-item">
+              <a href="aboutus.html ">ABOUT US</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-newsletter">
+          <h1>Newsletter</h1>
+          <div class="navbar-search">
+            <img src="./assets/search.svg" alt="icon" width="15rem" />
           </div>
-        </nav>
-      </div>
-      <!-- ----------------------------------- navbar 02----------------------------- -->
-      <div class="container-fluid navBar-container-02">
-        <nav class="navbar navbar-expand-lg px-5">
-          <div class="row align-items-center">
-            <div class="navbar-head col-lg-3">
-              <a href="healthWebsite.html"><h1 class="brand">health</h1></a>
-            </div>
-            <div class="col-lg-8">
-              <ul class="navbar-nav d-flex justify-content-between">
-                <li class="nav-item active pl-0">
-                  <a href="news.html">News</a>
-                </li>
-                <li class="nav-item">
-                  <a href="news.html ">Conditions A-Z</a>
-                </li>
-                <li class="nav-item">
-                  <a href="nutrition.html">Nutritions</a>
-                </li>
-                <li class="nav-item"><a href="news.html ">Wellness</a></li>
-                <li class="nav-item"><a href="news.html ">What to buy</a></li>
-                <li class="nav-item"><a href="aboutus.html ">About Us</a></li>
-              </ul>
-            </div>
-            <div class="navbar-head col-lg-1">
-              <div class="navbar-newsletter">
-                <h1>Newsletter</h1>
-                <div class="navbar-search">
-                  <img src="./assets/search.svg" alt="icon" width="15rem" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
       <!-- -----------------------------NewsBody--------------------------------- -->
 
       <div class="container-fluid newsBodyContainer">
@@ -168,165 +137,193 @@
           <div class="col-lg-3 col-md-4 my-4">
             <div class="newsCard">
               <img src="./assets/news01.webp" alt="Picture" />
-              <div>NEWS</div>
-              <h1>
-                FDA's Updated Mammogram Regulations Aim to Protect People With
-                Dense Breasts
-              </h1>
-              <p>By Julia</p>
+              <div class="newsCardContent">
+                <div class="contentHead" class="contentHead">NEWS</div>
+                <h1>
+                  FDA's Updated Mammogram Regulations Aim to Protect People With
+                  Dense Breasts
+                </h1>
+                <p>By Julia</p>
+              </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 my-4">
             <div class="newsCard">
               <img src="./assets/news02.webp" alt="Picture" />
-              <div>NEWS</div>
-              <h1>
-                People Who Regularly Use Laxatives May Have an Increased Risk of
-                Dementia, Study Shows
-              </h1>
-              <p>By Julia</p>
+              <div class="newsCardContent">
+                <div class="contentHead">NEWS</div>
+                <h1>
+                  People Who Regularly Use Laxatives May Have an Increased Risk
+                  of Dementia, Study Shows
+                </h1>
+                <p>By Julia</p>
+              </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 my-4">
             <div class="newsCard">
               <img src="./assets/news03.webp" alt="Picture" />
-              <div>NEWS</div>
-              <h1>
-                Erythritol, a Zero-Calorie Sweetener, Linked to Increased Risk
-                of Heart Attack and Stroke
-              </h1>
-              <p>By Julia</p>
+              <div class="newsCardContent">
+                <div class="contentHead">NEWS</div>
+                <h1>
+                  Erythritol, a Zero-Calorie Sweetener, Linked to Increased Risk
+                  of Heart Attack and Stroke
+                </h1>
+                <p>By Julia</p>
+              </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 my-4">
             <div class="newsCard">
               <img src="./assets/news04.webp" alt="Picture" />
-              <div>NEWS</div>
-              <h1>
-                Nearly 50% of Women Skip Preventative Health Appointments—Here
-                Are the Checkups to Prioritize
-              </h1>
-              <p>By Julia</p>
+              <div class="newsCardContent">
+                <div class="contentHead">NEWS</div>
+                <h1>
+                  Nearly 50% of Women Skip Preventative Health Appointments—Here
+                  Are the Checkups to Prioritize
+                </h1>
+                <p>By Julia</p>
+              </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 my-4">
             <div class="newsCard">
               <img src="./assets/news05.webp" alt="Picture" />
-              <div>NEWS</div>
-              <h1>
-                TikTok Announces Daily Time Limit for Teens, But Is It Enough?
-              </h1>
-              <p>By Julia</p>
+              <div class="newsCardContent">
+                <div class="contentHead">NEWS</div>
+                <h1>
+                  TikTok Announces Daily Time Limit for Teens, But Is It Enough?
+                </h1>
+                <p>By Julia</p>
+              </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 my-4">
             <div class="newsCard">
               <img src="./assets/news06.webp" alt="Picture" />
-              <div>NEWS</div>
-              <h1>
-                Insulin Prices: Eli Lilly Cuts Costs, but More Needs to Be Done
-                for Access, Affordability
-              </h1>
-              <p>By Julia</p>
+              <div class="newsCardContent">
+                <div class="contentHead">NEWS</div>
+                <h1>
+                  Insulin Prices: Eli Lilly Cuts Costs, but More Needs to Be
+                  Done for Access, Affordability
+                </h1>
+                <p>By Julia</p>
+              </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 my-4">
             <div class="newsCard">
               <img src="./assets/news07.webp" alt="Picture" />
-              <div>NEWS</div>
-              <h1>
-                CDC Warns About Drug-Resistant Stomach Bug on the Rise in the
-                US: What to Know
-              </h1>
-              <p>By Julia</p>
+              <div class="newsCardContent">
+                <div class="contentHead">NEWS</div>
+                <h1>
+                  CDC Warns About Drug-Resistant Stomach Bug on the Rise in the
+                  US: What to Know
+                </h1>
+                <p>By Julia</p>
+              </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 my-4">
             <div class="newsCard">
               <img src="./assets/news08.webp" alt="Picture" />
-              <div>NEWS</div>
-              <h1>
-                IBD Symptoms May Show Up Years Before Clinical Diagnosis, Study
-                Shows
-              </h1>
-              <p>By Julia</p>
+              <div class="newsCardContent">
+                <div class="contentHead">NEWS</div>
+                <h1>
+                  IBD Symptoms May Show Up Years Before Clinical Diagnosis,
+                  Study Shows
+                </h1>
+                <p>By Julia</p>
+              </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 my-4">
             <div class="newsCard">
               <img src="./assets/news02.webp" alt="Picture" />
-              <div>NEWS</div>
-              <h1>
-                People Who Regularly Use Laxatives May Have an Increased Risk of
-                Dementia, Study Shows
-              </h1>
-              <p>By Julia</p>
+              <div class="newsCardContent">
+                <div class="contentHead">NEWS</div>
+                <h1>
+                  People Who Regularly Use Laxatives May Have an Increased Risk
+                  of Dementia, Study Shows
+                </h1>
+                <p>By Julia</p>
+              </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 my-4">
             <div class="newsCard">
               <img src="./assets/news02.webp" alt="Picture" />
-              <div>NEWS</div>
-              <h1>
-                People Who Regularly Use Laxatives May Have an Increased Risk of
-                Dementia, Study Shows
-              </h1>
-              <p>By Julia</p>
+              <div class="newsCardContent">
+                <div class="contentHead">NEWS</div>
+                <h1>
+                  People Who Regularly Use Laxatives May Have an Increased Risk
+                  of Dementia, Study Shows
+                </h1>
+                <p>By Julia</p>
+              </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 my-4">
             <div class="newsCard">
               <img src="./assets/news03.webp" alt="Picture" />
-              <div>NEWS</div>
-              <h1>
-                Erythritol, a Zero-Calorie Sweetener, Linked to Increased Risk
-                of Heart Attack and Stroke
-              </h1>
-              <p>By Julia</p>
+              <div class="newsCardContent">
+                <div class="contentHead">NEWS</div>
+                <h1>
+                  Erythritol, a Zero-Calorie Sweetener, Linked to Increased Risk
+                  of Heart Attack and Stroke
+                </h1>
+                <p>By Julia</p>
+              </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 my-4">
             <div class="newsCard">
               <img src="./assets/news04.webp" alt="Picture" />
-              <div>NEWS</div>
-              <h1>
-                Nearly 50% of Women Skip Preventative Health Appointments—Here
-                Are the Checkups to Prioritize
-              </h1>
-              <p>By Julia</p>
+              <div class="newsCardContent">
+                <div class="contentHead">NEWS</div>
+                <h1>
+                  Nearly 50% of Women Skip Preventative Health Appointments—Here
+                  Are the Checkups to Prioritize
+                </h1>
+                <p>By Julia</p>
+              </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 my-4">
             <div class="newsCard">
               <img src="./assets/news03.webp" alt="Picture" />
-              <div>NEWS</div>
-              <h1>
-                Erythritol, a Zero-Calorie Sweetener, Linked to Increased Risk
-                of Heart Attack and Stroke
-              </h1>
-              <p>By Julia</p>
+              <div class="newsCardContent">
+                <div class="contentHead">NEWS</div>
+                <h1>
+                  Erythritol, a Zero-Calorie Sweetener, Linked to Increased Risk
+                  of Heart Attack and Stroke
+                </h1>
+                <p>By Julia</p>
+              </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 my-4">
             <div class="newsCard">
               <img src="./assets/news04.webp" alt="Picture" />
-              <div>NEWS</div>
-              <h1>
-                Nearly 50% of Women Skip Preventative Health Appointments—Here
-                Are the Checkups to Prioritize
-              </h1>
-              <p>By Julia</p>
+              <div class="newsCardContent">
+                <div class="contentHead">NEWS</div>
+                <h1>
+                  Nearly 50% of Women Skip Preventative Health Appointments—Here
+                  Are the Checkups to Prioritize
+                </h1>
+                <p>By Julia</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <!-- ---------------------Footer------------------------ -->
-      <div class="container-fluid">
+      <div class="container-fluid footerContainer">
         <div class="footer row">
-          <div class="contact col-md-6">
+          <div class="contact col-lg-6">
             <div class="contactDet">
-              <h1 class="brand">health</h1>
-              <input class="newsBtn" value="NEWSLETTERS" />
+              <h1 class="footer-brand">health</h1>
+              <button class="newsBtn">NEWSLETTERS</button>
               <div class="footerIcons">
                 <div class="navIcon">
                   <i class="fa-brands fa-facebook-f"></i>
@@ -346,26 +343,28 @@
               </div>
             </div>
           </div>
-          <div class="footerlinks col-md-6">
-            <div class="links">
-              <ul class="linksHead1">
-                <li>News</li>
-                <li>Conditions A-Z</li>
-                <li>Nutrition</li>
-                <li>Wellness</li>
-              </ul>
-              <ul class="row linksHead2">
-                <li class="col-sm-6">About Us</li>
-                <li class="col-sm-6">Editorial Process</li>
-                <li class="col-sm-6">Privacy Policy</li>
-                <li class="col-sm-6">Terms of Use</li>
-                <li class="col-sm-6">Advertise</li>
-                <li class="col-sm-6">Medical Expert Board</li>
-                <li class="col-sm-6">Anti-Racism Pledge</li>
-                <li class="col-sm-6">Product Vetting</li>
-                <li class="col-sm-6">Careers</li>
-                <li class="col-sm-6">Contact</li>
-              </ul>
+          <div class="col-lg-6">
+            <div class="footerlinks px-4">
+              <div class="links">
+                <ul class="linksHead1">
+                  <li>News</li>
+                  <li>Conditions A-Z</li>
+                  <li>Nutrition</li>
+                  <li>Wellness</li>
+                </ul>
+                <ul class="row linksHead2">
+                  <li class="col-sm-6">About Us</li>
+                  <li class="col-sm-6">Editorial Process</li>
+                  <li class="col-sm-6">Privacy Policy</li>
+                  <li class="col-sm-6">Terms of Use</li>
+                  <li class="col-sm-6">Advertise</li>
+                  <li class="col-sm-6">Medical Expert Board</li>
+                  <li class="col-sm-6">Anti-Racism Pledge</li>
+                  <li class="col-sm-6">Product Vetting</li>
+                  <li class="col-sm-6">Careers</li>
+                  <li class="col-sm-6">Contact</li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="note col-12">
@@ -375,13 +374,40 @@
               professional medical advice, diagnosis, or treatment.
             </p>
           </div>
-          <div class="copyright col-12">
-            <p class="copyrightDet">
-              Health is part of the Dotdash Meredith publishing family.
-            </p>
-          </div>
         </div>
       </div>
     </div>
+    <!-- ----------------------JQuery--------------------------- -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        console.log($(window).width());
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 80) {
+            $(".navbar-tabs").css("position", "static");
+            $(".navBar-container").css("padding-bottom", 0);
+            $(".brand").css("font-size", "2rem");
+          } else {
+            $(".navbar-tabs").css("position", "absolute");
+            $(".navBar-container").css("padding-bottom", "1.8rem");
+            $(".brand").css("font-size", "4rem");
+          }
+        });
+      });
+    </script>
   </body>
 </html>

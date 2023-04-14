@@ -1,40 +1,34 @@
 .mainContainer {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 1rem;
-  padding: 0;
 }
 .container-fluid {
   padding: 0;
+  margin: 0;
 }
-.navBar-container-01 {
+.navBar-container {
   background-color: #fff;
   border-bottom: 1px solid #e8ddff;
   position: fixed;
   z-index: 1000;
-}
-.navBar-container-02 {
-  background-color: #fff;
-  border-bottom: 1px solid #e8ddff;
-  position: fixed;
-  z-index: 1000;
-}
-.row {
   width: 100%;
-}
-.navbar-head {
+  max-width: 90rem;
+  padding-bottom: 1.8rem;
   display: flex;
   justify-content: space-between;
 }
-.navbar-head a {
-  text-decoration: none !important;
-}
+
 .brand {
   color: rgba(28, 14, 64, 255);
-  font-weight: 700;
-  font-size: 3.8rem;
+  font-weight: 800;
+  font-size: 4rem;
   font-family: "Plus Jakarta Sans";
+}
+.brand:hover {
+  cursor: pointer;
 }
 .navbar-newsletter {
   display: flex;
@@ -56,28 +50,51 @@
   height: 1.5rem;
   background-color: orange;
 }
+.navbar-tabs-wrapper {
+  flex-grow: 0 !important;
+}
+.navbar-tabs {
+  position: absolute;
+  top: 5.5rem;
+  left: 3.3rem;
+}
 .nav-item {
   padding: 0.5rem;
 }
-.nav-item h1 {
-  color: rgba(28, 14, 64, 255);
-  font-weight: 600;
-  font-size: 1rem;
-  letter-spacing: 0.0625rem;
-  font-family: "Plus Jakarta Sans";
-}
+
 .nav-item a {
   color: rgba(28, 14, 64, 255);
-  font-weight: 600;
-  font-size: 1rem;
+  font-weight: 700;
+  font-size: 0.8rem;
   letter-spacing: 0.0625rem;
   font-family: "Plus Jakarta Sans";
+  text-decoration: none;
+  padding-right: 0.3rem;
+}
+.nav-item a:hover {
+  color: #571af2;
+}
+.menuBtn {
+  padding: 0.8rem;
+  border-radius: 30%;
+}
+.menuBtn:focus {
+  background-color: #22066b;
+  outline: none !important;
+}
+.menuBtn:focus .menuIcon i {
+  color: white !important;
+}
+.menuIcon i {
+  color: #1c0e40;
+  font-size: 2rem;
 }
 /* ----------------------------------NewsBody------------------------------------ */
 .newsBodyContainer {
   padding: 0 3rem 3rem 3rem;
   margin: 0rem;
   width: 100%;
+  max-width: 90rem;
   margin-top: 10rem;
 }
 .newsBodyHead {
@@ -149,6 +166,7 @@
   padding: 0 3rem 3rem 3rem;
   margin: 0rem;
   width: 100%;
+  max-width: 90rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,10 +177,16 @@
   flex-direction: column;
   row-gap: 1rem;
 }
+.newsCardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 1rem;
+}
 .newsCard img {
   border-radius: 0.5rem;
 }
-.newsCard div {
+.contentHead {
   font-weight: 500;
   font-size: 0.625rem;
   letter-spacing: 0.0625rem;
@@ -188,8 +212,23 @@
   font-family: "Plus Jakarta Sans";
 }
 /* ---------------------Footer--------------------------- */
-.footer {
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-top: 1px solid rgb(235, 235, 235);
+}
+.footer {
+  width: 100%;
+  max-width: 90rem;
+  margin: 0;
+  justify-content: center;
+}
+.footer-brand {
+  color: rgba(28, 14, 64, 255);
+  font-weight: 800;
+  font-size: 4rem;
+  font-family: "Plus Jakarta Sans";
 }
 
 .contactDet {
@@ -197,9 +236,11 @@
   flex-direction: column;
   row-gap: 1.5rem;
   padding: 1.5rem 0 1.5rem 3rem;
+  width: 100%;
 }
 .newsBtn {
-  width: 18.75rem;
+  width: 100%;
+  max-width: 18.75rem;
   padding: 1rem 1.5rem;
   color: #1c0e40;
   background-color: #fefcf9;
@@ -243,8 +284,9 @@
 .footerlinks {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  /* background-color: red; */
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 .linksHead1 {
@@ -261,10 +303,102 @@
 }
 .linksHead2 {
   list-style-type: none;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 .linksHead2 li {
   font-weight: 500;
   font-size: 0.875rem;
   font-family: "Plus Jakarta Sans";
   padding: 0.5rem 0 0.5rem 0;
+}
+/* --------------------------------Responsiveness------------------------------------ */
+@media (max-width: 992px) {
+  .navbar-newsletter {
+    display: none;
+  }
+  .navbar-tabs {
+    position: static !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .newsCardsContainer {
+    padding: 0 1.5rem 3rem 1.5rem;
+  }
+  .newsBodyContainer {
+    padding: 0 1.5rem 3rem 1.5rem;
+  }
+  .contact {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .links {
+    width: 50%;
+    flex-direction: column;
+  }
+  .linksHead1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .linksHead1 li {
+    width: 50%;
+    text-align: center;
+  }
+  .linksHead2 li {
+    text-align: center;
+  }
+  .contactDet {
+    align-items: center;
+    padding: 1.5rem 0 1.5rem 0rem;
+  }
+  .newsBodyCards {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .newsBodyList {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    width: 100%;
+  }
+  .newsCard {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .newsCard img {
+    width: 9.9375rem;
+    height: 6.625rem;
+  }
+  .newsCard h1 {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 550px) {
+  .newsCardsContainer {
+    padding: 0 1rem 3rem 1rem;
+  }
+  .newsBodyContainer {
+    padding: 0 1rem 3rem 1rem;
+  }
+  .brand {
+    font-size: 3rem !important;
+    margin: 0;
+  }
+  .links {
+    width: 100%;
+    flex-direction: column;
+  }
+  .contactDet {
+    padding: 1.5rem 0 1.5rem 0rem;
+  }
+  .newsCard img {
+    width: 7rem;
+    height: 3.6rem;
+  }
 }
