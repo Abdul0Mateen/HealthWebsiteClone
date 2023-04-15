@@ -922,4 +922,28 @@
   .contactDet {
     padding: 1.5rem 0 1.5rem 0rem;
   }
+  .newsContainer {
+    padding: 0 1rem 3rem 1rem;
+  }
+  .exploreContainer {
+    padding: 0 1rem 3rem 1rem;
+  }
+  .teamContainer {
+    padding: 0 1rem 3rem 1rem;
+  }
+  .eatContainer {
+    padding: 0 1rem 3rem 1rem;
+  }
+  .excerciseContainer {
+    padding: 0 1rem 3rem 1rem;
+  }
+  .anxietyContainer {
+    padding: 0 1rem 3rem 1rem;
+  }
+  .signupContainer {
+    padding: 0 1rem 3rem 1rem;
+  }
+  .recommendContainer {
+    padding: 0 1rem 3rem 1rem;
+  }
 }
